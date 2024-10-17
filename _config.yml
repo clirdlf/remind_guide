@@ -4,6 +4,8 @@ theme: just-the-docs
 
 url: https://clirdlf.github.io/remind_guide
 
+baseurl: /remind_guide
+
 aux_links:
   CLIR: https://www.clir.org
 
