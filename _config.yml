@@ -16,6 +16,8 @@ color_scheme: clir
 logo: "/assets/images/clir-red-symbol.png"
 favicon_ico: "/assets/images/favicon.ico"
 
+permalink: pretty
+
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
 # Note: the main Just the Docs site does *not* use Google Analytics.
