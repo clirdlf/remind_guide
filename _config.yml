@@ -43,7 +43,7 @@ exclude_from_localization: ["assets"]
 parallel_localization: true
 
 plugins:
-  - jekyll-imagemagick
+  # - jekyll-imagemagick
   - jekyll-link-attributes
   - jekyll-seo-tag
   - jekyll-polyglot
