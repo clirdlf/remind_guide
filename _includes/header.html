@@ -1,0 +1,29 @@
+<header class="p-3 mb-3 border-bottom">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                <i class="bi bi-command fs-4 fw-bolder"></i> <span class="px-3 fs-5">{{ site.data.l10n.short_title }}</span>
+            </a>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <!-- <li><a target="_blank" href="https://remind.clir.org" class="nav-link px-2 nav-link-secondary">Re:Mind Site</a></li> -->
+            <li><a href="https://www.clir.org/" class="nav-link px-2 link-body-emphasis">CLIR</a></li>
+            <li><a href="/{{ site.active_lang }}/resources/" class="nav-link px-2 link-body-emphasis">{{ site.data[site.active_lang].strings.navigation.resources }}</a></li>
+            <!-- <li>
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                search
+                <span class="nav-link px-2 text-body-emphasis">ctrl k <i class="bi bi-search"></i></span>
+              </button>
+            </li> -->
+          </ul>
+
+          {% comment %}   {% endcomment %}
+          <!-- search -->
+          {%- include search.liquid %}
+
+          {%- include language-switcher.html %}
+
+        <i class="bi bi-github px-3"></i>
+      </div>
+    </div>
+  </header>

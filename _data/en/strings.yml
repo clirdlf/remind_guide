@@ -1,0 +1,45 @@
+next: Next
+previous: Previous
+github_edit: Edit this page on GitHub
+
+navigation:
+  home: Home
+  field_guide: Field Guide
+  resources: Resources
+  on_this_page: On This Page
+
+# see https://github.com/george-gca/multi-language-al-folio/blob/main/_data/en-us/strings.yml
+pagination:
+  page: page
+
+search:
+  dark_theme:
+    description: Change the theme of the site to Dark
+    title: Change theme to dark
+  dropdown: Dropdown
+  email: Send an email
+  footer:
+    close: to close
+    navigate: to navigate
+    parent: move to parent
+    select: to select
+  languages: Languages
+  light_theme:
+    description: Change the theme of the site to Light
+    title: Change theme to light
+  navigation: Navigation menu
+  news: News
+  placeholder: Type to start searching
+  posts: Posts
+  projects: Projects
+  socials: Socials
+  system_theme:
+    description: Change the theme of the site to System Default
+    title: Use system default theme
+  theme: Theme
+
+page:
+  created_by: by
+  last_updated: Last Updated
+references: References
+

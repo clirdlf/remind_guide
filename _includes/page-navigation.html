@@ -1,0 +1,38 @@
+<!-- TODO: swap order of next/previous for ar -->
+
+{%- assign sorted_pages = site.pages | sort: "nav_order" -%}
+{%- assign current_page = page.nav_order %}
+{%- assign previous_page = current_page | minus: 1 %}
+{%- assign next_page = current_page | plus: 1 %}
+{%- assign last_page = sorted_pages | last %}
+{%- assign last_page_id = last_page.nav_order %}
+
+<pre>
+  current: {{ current_page }}
+  previous_page: {{ previous_page }}
+  next_page: {{ next_page }}
+  last_page: {{ last_page_id }}
+</pre>
+
+<div id="pageNav" class="container my-5 py-5">
+  <div class="row gx-5">
+    <div class="col border rounded pt-3 m-4">
+      <a class="link-body-emphasis link-underline-opacity-0" href="#">
+        <p class="fs-6 link-secondary">
+          <i class="bi bi-chevron-left"></i> 
+          {{ site.data[site.active_lang].strings.previous }}
+        </p>
+        <p class="mt-1 ms-1">{{ page.title }}</p>
+      </a>
+    </div>
+    <div class="col text-end border rounded pt-3 m-4">
+      <a class="link-body-emphasis link-underline-opacity-0" href="#">
+        <p class="fs-6 link-secondary">
+          {{ site.data[site.active_lang].strings.next }}
+          <i class="bi bi-chevron-right"></i>
+        </p>
+        <p class="mt-1 ms-1">{{ page.title }}</p>
+      </a>
+    </div>
+  </div>
+</div>
