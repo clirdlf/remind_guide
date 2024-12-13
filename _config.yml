@@ -1,43 +1,40 @@
-title: "Re:Mind Guide"
-description: "Re:Mind guide to getting started"
-theme: just-the-docs
-
-url: https://clirdlf.github.io/remind_guide
-
-# baseurl: /remind_guide
-baseurl: /
-
-aux_links:
-  CLIR: https://www.clir.org
-
-aux_links_new_tab: true
-
-color_scheme: clir
-
-logo: "/assets/images/clir-red-symbol.png"
-favicon_ico: "/assets/images/favicon.ico"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+github: https://github.com/clirdlf/remind_guide
 
 permalink: pretty
 
-# Google Analytics Tracking (optional)
-# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
-# Note: the main Just the Docs site does *not* use Google Analytics.
-ga_tracking: 
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+kramdown:
+  # Enable GitHub flavored Markdown (fenced code blocks)
+  input: GFM
+  auto_ids: true
 
-heading_anchors: true
+# -----------------------------------------------------------------------------
+# Jekyll Polyglot
+# -----------------------------------------------------------------------------
+# settings for polyglot (https://github.com/untra/polyglot?tab=readme-ov-file#configuration)
+languages: ["ar", "en", "fr", "sw"]
+default_lang: "en"
+exclude_from_localization: ["_sass", "assets"]
+parallel_localization: true
+country_flag: false # set true for allowing flag symbol in language toggle
 
-search_enabled: true
-mermaid: 
-  version: "9.1.3"
+# fix error with polyglot
+sass:
+  sourcemap: never
+  style: compressed
 
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/clirdlf/remind_guide" # the github URL for your repo
-gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+# TOC https://github.com/toshimaru/jekyll-toc
+toc:
+  list_class: list-group list-group-flush
+  item_class: list-group-item
+
+# Sitemap settings
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
 
 # settings for polyglot (https://github.com/untra/polyglot?tab=readme-ov-file#configuration)
 languages: ["en", "fr", "sw", "mi", "sp"]
@@ -46,33 +43,90 @@ exclude_from_localization: ["assets"]
 parallel_localization: true
 
 plugins:
+  - jekyll-imagemagick
+  - jekyll-link-attributes
   - jekyll-seo-tag
+<<<<<<< HEAD
   # - jekyll-polyglot
+=======
+  - jekyll-polyglot
+  - jekyll-minifier
+  - jekyll-sitemap
+  - jekyll-toc
+>>>>>>> aria
 
 exclude:
-  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
+  - bin/
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  # specific to the theme website:
-  - bin/
-  - lib/
-  - "*.gemspec"
-  - "*.gem"
-  - LICENSE.txt
+  - INSTALL.md
+  - LICENSE
+  - lighthouse_results/
   - package.json
   - package-lock.json
-  - Rakefile
+  - purgecss.config.js
   - README.md
-  - CODE_OF_CONDUCT.md
-  - docker-compose.yml
-  - Dockerfile
-  # theme test code
-  - fixtures/
+  - readme_preview/
+  - UPGRADING.md
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+
+# -----------------------------------------------------------------------------
+# Jekyll Minifier
+# -----------------------------------------------------------------------------
+
+jekyll-minifier:
+  exclude: ["robots.txt", "assets/js/search/*.js", "assets/libs/**/*"]
+  uglifier_args:
+    harmony: true
+
+# -----------------------------------------------------------------------------
+# Jekyll Link Attributes
+# -----------------------------------------------------------------------------
+
+# These are the defaults
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+  exclude:
+
+  # -----------------------------------------------------------------------------
+# Responsive WebP Images
+# -----------------------------------------------------------------------------
+
+# MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
+#   convert -version
+# Make sure to get the figure and the source elements implemented for images
+imagemagick:
+  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  widths:
+    - 480
+    - 800
+    - 1400
+  input_directories:
+    - assets/images/
+  input_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".tiff"
+    - ".gif"
+  output_formats:
+    webp: "-quality 85"
+
+# Lazy loading images
+#   If you enable lazy loading, all images will add the loading="lazy" attribute.
+#   This will make your site load faster, but it may not be supported in all browsers.
+#   You can also set loading="" to other values for specific images to override the default behavior.
+#   Options: "auto", "eager", "lazy"
+#   See https://web.dev/browser-level-image-lazy-loading/ for more information.
+lazy_loading_images: true # enables lazy loading of images (recommended)

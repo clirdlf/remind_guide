@@ -1,0 +1,26 @@
+---
+layout: landing
+title: "Re:Mind Field Guide"
+description: "Re:Mind Field Guide Home"
+lang: en
+nav_order: 1
+---
+
+<div class="px-4 py-5 my-5 text-center">
+
+  <p class="mb-5 fs-5">
+    <a target="_blank" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="https://github.com/clirdlf/remind_guide">{{ site.data.l10n.follow_along }}</a> 
+    <i class="bi bi-arrow-up-right"></i>
+  </p>
+
+  <h1 id="{{ site.data.l10n.title | slugify }}" class="display-5 fw-bold text-body-emphasis">
+    {{ site.data.l10n.title }}
+  </h1>
+
+  <p class="lead mb-4 text-body-secondary">{{ site.data.l10n.tagline }}</p>
+
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    <a href="/introduction/" type="button" class="btn btn-outline-secondary btn-lg px-4">{{ site.data.l10n.get_started }}</a>
+  </div>
+
+</div>

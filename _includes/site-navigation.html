@@ -1,0 +1,14 @@
+<aside class="col-sm-3 d-none d-md-block">
+    <div>
+        {{ site.data[site.active_lang].strings.navigation.field_guide }}
+        <ul class="list-group list-group-flush">
+
+            {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
+            {% for page in sorted_pages %}
+                {%- if page.nav_order %}
+                <li class="list-group-item">{{ page.title }}</li>
+                {%- endif %}
+            {%- endfor %}
+        </ul>
+    </div>
+</aside>

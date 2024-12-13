@@ -1,9 +1,16 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~> 4.3.4" # installed by `gem jekyll`
-gem "webrick" # required when using Ruby >= 3 and Jekyll <= 4.2.2
+gem 'jekyll', '~> 4.3.4' # installed by `gem jekyll`
+gem 'webrick' # required when using Ruby >= 3 and Jekyll <= 4.2.2
 
-# gem "just-the-docs", "0.10.0" # pinned to the current release
-gem "just-the-docs" # always download the latest release
+gem 'jekyll-link-attributes', '~> 1.0'
+gem 'jekyll-polyglot', '~> 1.8'
+gem 'jekyll-seo-tag'
 
-gem "jekyll-polyglot", "~> 1.8"
+gem 'jekyll-minifier', '~> 0.1.10'
+
+gem 'jekyll-sitemap', '~> 1.4'
+
+gem 'jekyll-toc', '~> 0.19.0'
+
+gem 'jekyll-imagemagick', '~> 1.4'
