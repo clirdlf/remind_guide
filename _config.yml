@@ -4,7 +4,8 @@ theme: just-the-docs
 
 url: https://clirdlf.github.io/remind_guide
 
-baseurl: /remind_guide
+# baseurl: /remind_guide
+baseurl: /
 
 aux_links:
   CLIR: https://www.clir.org
@@ -38,8 +39,15 @@ gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
+# settings for polyglot (https://github.com/untra/polyglot?tab=readme-ov-file#configuration)
+languages: ["en", "fr", "sw", "mi", "sp"]
+default_lang: "en"
+exclude_from_localization: ["assets"]
+parallel_localization: true
+
 plugins:
   - jekyll-seo-tag
+  # - jekyll-polyglot
 
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
