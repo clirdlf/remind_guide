@@ -46,14 +46,10 @@ plugins:
   - jekyll-imagemagick
   - jekyll-link-attributes
   - jekyll-seo-tag
-<<<<<<< HEAD
-  # - jekyll-polyglot
-=======
   - jekyll-polyglot
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-toc
->>>>>>> aria
 
 exclude:
   - bin/
@@ -77,7 +73,6 @@ exclude:
   - vendor
 keep_files:
   - CNAME
-  - .nojekyll
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
