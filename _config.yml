@@ -1,5 +1,5 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/remind_guide" # the subpath of your site, e.g. /blog
 github: https://github.com/clirdlf/remind_guide
 
 permalink: pretty
@@ -66,6 +66,7 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
+  - pnpm-lock.yaml
   - purgecss.config.js
   - README.md
   - readme_preview/
