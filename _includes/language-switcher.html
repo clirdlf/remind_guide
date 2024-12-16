@@ -1,43 +1,18 @@
 <div class="dropdown text-end">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-        {{ site.active_lang }}
-    </button> 
 
-    <ul class="dropdown-menu text-small">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {{ site.data[site.active_lang].l10n.lang_name }}
+    </button>
 
-        {% comment %}        
-            {% include languages.liquid %}
-        {% endcomment %}
-
-        {%- for lang in site.languages %}
-            {%- assign lang_name = site.data[lang].l10n.lang_name %}
-            {%- assign class = "dropdown-item" %}
-            {%- assign aria-current = false %}
-
-            {%- if lang == site.active_lang %}
-                {%- assign class = "dropdown-item active" %}
-                {%- assign aria-current = true %}
-            {%- endif %}
-            {%- comment %}
-            {%- if lang == site.default_lang %}{{page.url | relative_url }}{% else %}{{ page.url | prepend: lang | relative_url }}{% endif %}
-            {%- endcomment %}
-            <li><a class="{{ class }}" aria-current="{{ aria-current }}" href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a></li>
-        {%- endfor %}
-        
+    <ul class="dropdown-menu">
+        {% assign language_set = false %}
+        {% for l in site.languages %}
+            {%- assign lang_name = site.data[l].l10n.lang_name %}
+            {% if l == site.default_lang %}
+                <a class="dropdown-item"{% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>{{ lang_name  }}</a>
+            {% else %}
+                <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}/{{ l }}{{ page.url }}" {%- endstatic_href %}>{{ lang_name }}</a>
+            {% endif %}
+        {% endfor %}
     </ul>
 </div>
-
-{% comment %}
-{% for lang in site.languages %}
-    {% assign lang_name = site.data[lang].l10n.lang_name %}
-    {% if lang == site.active_lang %}
-{{ lang_name }}
-    {% else %}
-        {% if lang == site.default_lang %}
-<a href=" {{ page.url }}">{{ lang_name }}</a>
-        {% else %}
-<a href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a>
-        {% endif %}
-    {% endif %}
-{% endfor %}
-{% endcomment %}

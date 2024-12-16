@@ -6,8 +6,8 @@ UI from https://github.com/nisabmohd/Aria-Docs
 
 # TODO
 
-[] Github build
-[] Add GH Discussions
+[x] Github build
+[x] Add GH Discussions
 [] Add search indicator
 [] Page navigation logic
   - Next (unless current page == last page)
@@ -17,7 +17,9 @@ UI from https://github.com/nisabmohd/Aria-Docs
 [] Bread Crumbs for `ar`
 [] Scroll top
 [] Print view
-[] Language switcher for `en` (e.g. `default_lang`)
+[] Footer should be at bottom of page
+[x] Language switcher for `en` (e.g. `default_lang`)
+[] favicons
 
 
 <!-- https://leo3418.github.io/collections/multilingual-jekyll-site/localize-date-format.html -->

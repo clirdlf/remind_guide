@@ -37,9 +37,9 @@ defaults:
       sitemap: false
 
 # settings for polyglot (https://github.com/untra/polyglot?tab=readme-ov-file#configuration)
-languages: ["en", "fr", "sw", "mi", "sp"]
+languages: ["ar", "en", "fr", "sw"]
 default_lang: "en"
-exclude_from_localization: ["assets"]
+exclude_from_localization: ["_sass", "assets"]
 parallel_localization: true
 
 plugins:
