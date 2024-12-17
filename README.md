@@ -20,8 +20,9 @@ UI from https://github.com/nisabmohd/Aria-Docs
 [] Footer should be at bottom of page
 [x] Language switcher for `en` (e.g. `default_lang`)
 [] favicons
+[x] Translation documentation
 
 
 <!-- https://leo3418.github.io/collections/multilingual-jekyll-site/localize-date-format.html -->
-  {%- assign date_format = site.data.l10n.date_format | default: "%b %-d, %Y" -%}
-  {{ page.date | date: date_format }}
+{%- assign date_format = site.data.l10n.date_format | default: "%b %-d, %Y" -%}
+{{ page.date | date: date_format }}

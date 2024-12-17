@@ -7,6 +7,7 @@ navigation:
   field_guide: Field Guide
   resources: Resources
   on_this_page: On This Page
+  community: Community
 
 # see https://github.com/george-gca/multi-language-al-folio/blob/main/_data/en-us/strings.yml
 pagination:
