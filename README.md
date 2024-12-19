@@ -13,7 +13,7 @@ UI from https://github.com/nisabmohd/Aria-Docs
   - Next (unless current page == last page)
   - Previous (unless current page == first page)
   - Switch next/previous for `ar` locale
-[] Site navigation on page view
+[x] Site navigation on page view
 [] Bread Crumbs for `ar`
 [] Scroll top
 [x] Print view
