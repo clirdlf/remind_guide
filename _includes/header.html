@@ -11,14 +11,19 @@
             <li><a href="/{{ site.active_lang }}/resources/" class="nav-link px-2 link-body-emphasis">{{ site.data[site.active_lang].strings.navigation.resources }}</a></li>
             <li><a href="https://github.com/clirdlf/remind_guide/discussions" target="_blank" class="nav-link px-2 link-body-emphasis">{{ site.data[site.active_lang].strings.navigation.community }}</a></li>
             <li>
-              <div class="d-flex">
+
+              <button id="search-toggle" type="button" aria-label="{{ site.data[site.active_lang].strings.search.placeholder }}" title="{{ site.data[site.active_lang].strings.search.placeholder }}" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="bi bi-search"></i></span>
+              </button> 
+
+              <!-- 
                 <div class="search" id="docsearch" data-guide-version="{{ site.version }}">
                   <button id="search-toggle" type="button" aria-label="{{ site.data[site.active_lang].strings.search.placeholder }}" title="{{ site.data[site.active_lang].strings.search.placeholder }}" onclick="openSearchModal()">
                     {{ site.data[site.active_lang].strings.search.placeholder }}
                     <span class="nav-link px-2 text-body-emphasis">ctrl k <i class="bi bi-search"></i></span>
                   </button>
-                </div>
-              </div>
+                </div>-->
+              
             </li> 
           </ul>
 
