@@ -1,0 +1,234 @@
+---
+title: Styleguide
+layout: styleguide
+permalink: styleguide/
+description: "Styleguide for Re:Mind Field Guide"
+lang: en
+---
+
+<div class="row my-5">
+    <div class="col">
+        <h2 id="paragraph">Paragraph</h2>
+        <p>Lorem, <strong>ipsum dolor sit</strong> 🎉 amet consectetur adipisicing elit. Odit possimus assumenda obcaecati eum, laborum nesciunt facilis, consequuntur cum ullam ex perspiciatis? Tempora, exercitationem praesentium temporibus totam provident tenetur ut expedita!</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor consequuntur quae eos veritatis aperiam reiciendis atque rem animi vel neque, deserunt rerum necessitatibus doloribus, illo quasi sit saepe aspernatur?</p>
+        <p>
+            A <a href="#">Link</a>,
+            <abbr title="not a good description">abbreviation</abbr>,
+            <strong>strong text</strong>, <em>em text</em>,
+            <del>deleted text</del>, and <mark>this is a mark text</mark>.
+            <code>.code</code>
+        </p>
+   
+        <h2 id="paragraph-and-image">Paragraph and Image</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit possimus assumenda obcaecati eum, laborum nesciunt facilis, consequuntur cum ullam ex perspiciatis? Tempora, exercitationem praesentium temporibus totam provident tenetur ut expedita!</p>
+
+        {% include figure.liquid
+            loading="eager"
+            path="/assets/images/00008-1297392784.png"
+            sizes = "250px"
+            alt="project thumbnail"
+            class="card-img-top" 
+        %}
+    </div>
+</div>
+
+<div class="row my-5">
+    <h2 id="lists">Lists</h2>
+    <div class="col-md-6 col-sm-12">
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Here is an example</li>
+            <li>of an ordered list.</li>
+            <li>
+              A parent list item.
+              <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+              </ul>
+            </li>
+            <li>A list item.</li>
+          </ol>
+          <h3>Unordered List</h3>
+
+          <ul class="disc">
+            <li>Here is an example</li>
+            <li>of an unordered list.</li>
+          </ul>
+
+          <h3 class="pt-5">Definition Lists</h3>
+          <h5>a) Multi-line Definitions (default)</h5>
+          <dl>
+            <dt><strong>This is a term</strong></dt>
+            <dd>
+              this is the definition of that term, which both live in a
+              <code>dl</code>.
+            </dd>
+            <dt><strong>Another Term</strong></dt>
+            <dd>And it gets a definition too, which is this line</dd>
+            <dd>
+              This is a 2<sup>nd</sup> definition for a single term. A
+              <code>dt</code> may be followed by multiple <code>dd</code>s.
+            </dd>
+          </dl>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <h3>List Group</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                Item 1
+            </li>
+            <li class="list-group-item">
+                Item 2
+            </li>
+            <li class="list-group-item">
+                Item 3
+            </li>
+    </ul>
+    <h3 class="my-3">Buttons</h3>
+    <p>
+        See Bootstrap Documentation for
+        <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/buttons/#base-class">Buttons</a>
+      </p>
+      <p>
+        <a class="btn btn-primary" href="#">Primary Button</a>
+        <a class="btn btn-secondary" href="#">Secondary Button</a>
+        <a class="btn btn-success" href="#">Success Button</a>
+        <a href="#" type="button" class="btn btn-outline-secondary btn-lg px-4 m-2">Outline-Secondary Large Button</a>
+      </p>
+
+      <h3 class="my-3">Code Block</h3>
+
+        {% highlight javascript %}
+        const baseValue = prompt('Enter the base of a triangle: ');
+        const heightValue = prompt('Enter the height of a triangle: ');
+
+        // calculate the area
+        const areaValue = (baseValue * heightValue) / 2;
+
+        console.log(
+            `The area of the triangle is ${areaValue}`
+        );
+        {% endhighlight %}
+    </div>
+
+    
+</div>
+
+
+<div class="row my-5">
+    <h2 id="headers">Headers</h2>
+    <div class="col-md-6 col-sm-12">
+            <h1>H1 Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum
+              ullam corporis ducimus qui repellendus nisi tempore nostrum voluptatum
+              debitis facilis tenetur magnam ut blanditiis fugiat quod incidunt,
+              deserunt vel.
+            </p>
+            <h2>H2 Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum
+              ullam corporis ducimus qui repellendus nisi tempore nostrum voluptatum
+              debitis facilis tenetur magnam ut blanditiis fugiat quod incidunt,
+              deserunt vel.
+            </p>
+            <h3>H3 Heading</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum
+              ullam corporis ducimus qui repellendus nisi tempore nostrum voluptatum
+              debitis facilis tenetur magnam ut blanditiis fugiat quod incidunt,
+              deserunt vel.
+            </p>
+   
+    </div>
+    <div class="col-md-6 col-sm-12">
+            <h4>H4 Heading</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum
+              ullam corporis ducimus qui repellendus nisi tempore nostrum voluptatum
+              debitis facilis tenetur magnam ut blanditiis fugiat quod incidunt,
+              deserunt vel.
+            </p>
+            <h5>H5 Heading</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum
+              ullam corporis ducimus qui repellendus nisi tempore nostrum voluptatum
+              debitis facilis tenetur magnam ut blanditiis fugiat quod incidunt,
+              deserunt vel.
+            </p>
+            <h6>H6 Heading</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum
+              ullam corporis ducimus qui repellendus nisi tempore nostrum voluptatum
+              debitis facilis tenetur magnam ut blanditiis fugiat quod incidunt,
+              deserunt vel.
+            </p>
+    </div>
+</div>
+
+<div class="row my-5">
+    <h2 id="cards">Cards</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-body">
+                <h4 class="py-3 fw-normal">Page Title</h4>
+                <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eius iure tempora odio necessitatibus provident modi perspiciatis deserunt
+                earum, harum tempore corporis vel dignissimos ab officiis quis, autem aperiam quam?
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-body">
+                <h4 class="py-3 fw-normal">Page Title</h4>
+                <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eius iure tempora odio necessitatibus provident modi perspiciatis deserunt
+                earum, harum tempore corporis vel dignissimos ab officiis quis, autem aperiam quam?
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-body">
+                <h4 class="py-3 fw-normal">Page Title</h4>
+                <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eius iure tempora odio necessitatibus provident modi perspiciatis deserunt
+                earum, harum tempore corporis vel dignissimos ab officiis quis, autem aperiam quam?
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row my-5">
+    <div class="col-md-6 col-sm-12">
+        <h2 id="responsive-images">Responsive Image
+        </h2>
+        {% include figure.liquid
+            loading="eager"
+            path="/assets/images/00008-1297392784.png"
+            sizes = "250px"
+            alt="project thumbnail"
+            class="card-img-top" 
+        %}
+    </div>
+    <div id="responsive-video" class="col-md-6 col-sm-12">
+        <h2>Responsive Video</h2>
+        <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/ZdrG04joSKU?si=tsbxLVqV6FQs8tKB?rel=0"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+    </div>
+</div>

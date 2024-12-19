@@ -5,10 +5,25 @@ version: "0.0.1"
 
 permalink: pretty
 
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+
+
 kramdown:
   # Enable GitHub flavored Markdown (fenced code blocks)
   input: GFM
   auto_ids: true
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
 
 # -----------------------------------------------------------------------------
 # Jekyll Polyglot
@@ -44,7 +59,7 @@ exclude_from_localization: ["_sass", "assets"]
 parallel_localization: true
 
 plugins:
-  # - jekyll-imagemagick
+  - jekyll-imagemagick
   - jekyll-link-attributes
   - jekyll-seo-tag
   - jekyll-polyglot
