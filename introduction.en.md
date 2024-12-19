@@ -6,11 +6,13 @@ description: "Re:Mind Introduction"
 lang: en
 nav_order: 2
 toc: true
+pagination: 
+  enabled: true
 ---
 
 In an era marked by rapid climate change, the preservation of our cultural heritage has become an urgent global challenge. As temperatures rise, sea levels climb, and extreme weather events intensify, our cultural treasures—from ancient artifacts to living traditions—are increasingly vulnerable.
 
-This field guide offers a comprehensive exploration of the strategies and tools needed to ensure the generative sustainability of cultural heritage. It delves into the intersection of climate science, cultural heritage conservation, and innovative technologies, providing practical guidance for heritage professionals, policymakers, and community members.
+This field guide offers an exploration of the strategies and tools needed to ensure the generative sustainability of cultural heritage. It delves into the intersection of climate science, cultural heritage conservation, and innovative technologies, providing practical guidance for heritage professionals, policymakers, and community members.
 
 Within these pages, you will discover:
 

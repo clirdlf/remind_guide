@@ -18,10 +18,11 @@
   <body class="h-100">
 
     {% include header.html %}
-
-    {%- if page.lang != site.active_lang -%}
-      {%- include no_translation.html -%}
-    {%- endif -%}
+    {%- comment %}
+      {%- if page.lang != site.active_lang -%}
+        {%- include no_translation.html -%}
+      {%- endif -%}
+    {%- endcomment %}
 
     {{ content }}
 

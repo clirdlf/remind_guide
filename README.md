@@ -9,7 +9,7 @@ UI from https://github.com/nisabmohd/Aria-Docs
 [x] Github build
 [x] Add GH Discussions
 [x] Add search indicator
-[] Page navigation logic
+[x] Page navigation logic
   - Next (unless current page == last page)
   - Previous (unless current page == first page)
   - Switch next/previous for `ar` locale

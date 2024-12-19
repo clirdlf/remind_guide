@@ -6,6 +6,8 @@ description: "Re:Mind Introduction"
 lang: fr
 nav_order: 2
 toc: true
+pagination: 
+  enabled: true
 ---
 
 À une époque marquée par un changement climatique rapide, la préservation de notre patrimoine culturel est devenue un défi mondial urgent. Alors que les températures augmentent, que le niveau de la mer monte et que les événements météorologiques extrêmes s'intensifient, nos trésors culturels, des artefacts anciens aux traditions vivantes, sont de plus en plus vulnérables.

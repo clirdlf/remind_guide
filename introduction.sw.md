@@ -6,6 +6,8 @@ description: "Re:Mind Introduction"
 lang: sw
 nav_order: 2
 toc: true
+pagination: 
+  enabled: true
 ---
 
 Katika enzi iliyoashiriwa na mabadiliko ya haraka ya hali ya hewa, uhifadhi wa urithi wetu wa kitamaduni umekuwa changamoto kubwa ya kimataifa. Kadiri joto linavyoongezeka, viwango vya bahari vinavyoongezeka, na matukio makali ya hali ya hewa yanazidi kuongezeka, hazina zetu za kitamaduni - kutoka kwa mabaki ya kale hadi mila iliyo hai - zinakuwa hatarini zaidi.
