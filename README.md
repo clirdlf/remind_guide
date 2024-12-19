@@ -8,7 +8,7 @@ UI from https://github.com/nisabmohd/Aria-Docs
 
 [x] Github build
 [x] Add GH Discussions
-[] Add search indicator
+[x] Add search indicator
 [] Page navigation logic
   - Next (unless current page == last page)
   - Previous (unless current page == first page)
@@ -16,7 +16,7 @@ UI from https://github.com/nisabmohd/Aria-Docs
 [] Site navigation on page view
 [] Bread Crumbs for `ar`
 [] Scroll top
-[] Print view
+[x] Print view
 [] Footer should be at bottom of page
 [x] Language switcher for `en` (e.g. `default_lang`)
 [] favicons
