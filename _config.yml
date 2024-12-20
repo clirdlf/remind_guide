@@ -59,13 +59,14 @@ exclude_from_localization: ["_sass", "assets"]
 parallel_localization: true
 
 plugins:
-  - jekyll-imagemagick
   - jekyll-link-attributes
   - jekyll-seo-tag
   - jekyll-polyglot
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-toc
+  - jekyll-imagemagick
+
 
 exclude:
   - bin/
