@@ -65,7 +65,7 @@ plugins:
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-toc
-  - jekyll-imagemagick
+  # - jekyll-imagemagick
 
 
 exclude:
