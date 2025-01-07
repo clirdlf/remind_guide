@@ -1,7 +1,7 @@
 ---
 ---
 
-@use 'bootstrap/bootstrap'; 
+// @use 'bootstrap/bootstrap'; 
 
 // https://github.com/robinkloeckner/jekyll_bootstrap5_sass/blob/master/02_scss_individual/assets/css/main.scss
 // @use "bootstrap/functions"
@@ -28,4 +28,4 @@
 // @import "bootstrap/utilities/api";
 
 // 6. Additional custom code
-@import "base";
+@use "base";
