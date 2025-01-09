@@ -1,6 +1,7 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/remind_guide" # the subpath of your site, e.g. /blog
 github: https://github.com/clirdlf/remind_guide
+github_branch: main # the branch this site is served from
 version: "0.0.1"
 
 permalink: pretty
