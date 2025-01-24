@@ -4,7 +4,7 @@ layout: page
 permalink: introduction/
 description: "Re:Mind Introduction"
 lang: sw
-nav_order: 2
+nav_order: 1
 toc: true
 pagination: 
   enabled: true

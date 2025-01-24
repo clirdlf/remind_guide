@@ -4,7 +4,7 @@ layout: page
 permalink: why-digitize-now/
 description: "Why Digitize Now?"
 lang: en
-nav_order: 3
+nav_order: 2
 toc: true
 pagination: 
   enabled: true
