@@ -113,7 +113,7 @@ DEPENDENCIES
   jekyll-imagemagick (~> 1.4)
   jekyll-link-attributes (~> 1.0)
   jekyll-minifier (~> 0.1.10)
-  jekyll-polyglot (~> 1.8)
+  jekyll-polyglot (~> 1.9)
   jekyll-seo-tag
   jekyll-sitemap (~> 1.4)
   jekyll-toc (~> 0.19.0)

@@ -4,7 +4,7 @@ gem 'jekyll', '~> 4.3.4' # installed by `gem jekyll`
 gem 'webrick' # required when using Ruby >= 3 and Jekyll <= 4.2.2
 
 gem 'jekyll-link-attributes', '~> 1.0'
-gem 'jekyll-polyglot', '~> 1.8'
+gem 'jekyll-polyglot', '~> 1.9'
 gem 'jekyll-seo-tag'
 
 gem 'jekyll-minifier', '~> 0.1.10'
