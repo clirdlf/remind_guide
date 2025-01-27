@@ -14,12 +14,12 @@ UI from https://github.com/nisabmohd/Aria-Docs
   - Previous (unless current page == first page)
   - Switch next/previous for `ar` locale
 [x] Site navigation on page view
-[] Bread Crumbs for `ar`
-[] Scroll top
+[x] Bread Crumbs for `ar`
+[x] Scroll top
 [x] Print view
-[] Footer should be at bottom of page
+[x] Footer should be at bottom of page
 [x] Language switcher for `en` (e.g. `default_lang`)
-[] favicons
+[x] favicons
 [x] Translation documentation
 
 
