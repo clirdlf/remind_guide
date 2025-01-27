@@ -34,7 +34,7 @@ Collaborate with other institutions, organizations, or experts to enhance your p
 * **Digital preservation communities**: Participate in online forums, working groups, and conferences to stay informed about best practices and emerging trends.
 * **Consultations**: Seek advice from experienced professionals on digital preservation strategies and technologies.
 
-# “Can We Do More?”
+## “Can We Do More?”
 
 In her [article](https://www.clir.org/can-we-do-more/), Carol Mandel emphasizes the importance of acknowledging the limitations of our current digital preservation efforts:
 
