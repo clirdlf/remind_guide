@@ -7,7 +7,7 @@ gem 'jekyll-link-attributes', '~> 1.0'
 gem 'jekyll-polyglot', '~> 1.10'
 gem 'jekyll-seo-tag'
 
-gem 'jekyll-minifier', '~> 0.1.10'
+gem 'jekyll-minifier', '~> 0.2.0'
 
 gem 'jekyll-sitemap', '~> 1.4'
 
